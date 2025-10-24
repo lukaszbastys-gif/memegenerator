@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ Add the Fomr embed script -->
+    <script async src="https://fomr.io/widget/embed.js"></script>
 </head>
 
 <body>
     <h1>Meme Generator</h1>
+
     <input type="file" id="imageInput" accept="image/*">
+
     <div class="controls">
         <input type="text" id="topText" placeholder="Enter Top Text">
         <input type="text" id="bottomText" placeholder="Enter Bottom Text">
         <button id="generate" onclick="generateMeme()">Generate Meme</button>
         <button id="download" onclick="downloadMeme()">Download Meme</button>
     </div>
+
     <canvas id="memeCanvas" width="580" height="450"></canvas>
 
-    <script src="script.js"></script>
-    <a href="https://memegeneratordarkmode.pages.dev/"><button>Visit here for dark mode!</button></a><br>
-    <div data-youform-embed data-form='rch1zu2m' data-width='700px' data-height='700'></div>
-    <script src="https://app.youform.com/embed.js"></script>
-    <button data-fomr-id="twyWAEhjak" data-fomr-type="popup" data-fomr-popup-overlay="true"
-        data-fomr-popup-position="corner">
-        Open form
+    <a href="https://memegeneratordarkmode.pages.dev/">
+        <button>Visit here for dark mode!</button>
+    </a>
+    <br>
+
+    <!-- ✅ Fomr popup trigger button -->
+    <button
+        data-fomr-id="twyWAEhjak"
+        data-fomr-type="popup"
+        data-fomr-popup-overlay="true"
+        data-fomr-popup-position="center">
+        Please click here and give us some feedback
     </button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
